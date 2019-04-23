@@ -17,7 +17,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <div>
             <Navbar />
-            <Route exact path="/" component={Home} />
+            <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/info" component={Info} />
             <Route path="/credits" component={Credits} />

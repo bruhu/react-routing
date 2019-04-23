@@ -1,13 +1,26 @@
 ul {
+  padding-top: 3em;
   list-style: none;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
-li {
-  padding: 1em;
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
 }
 
-li:hover {
-  color: hotpink;
+a:hover {
+  background-color: #474747;
+  border-radius: 5px;
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
 }
