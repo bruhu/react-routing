@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function Credits() {
   return (
-    <div>
-      
-    </div>
-  )
+    <React.Fragment>
+      <h2>Credits</h2>
+      <p>Thanks Mom.</p>
+    </React.Fragment>
+  );
 }
