@@ -24,6 +24,7 @@ function App() {
             <Route path="/credits" component={Credits} />
             {/* <Route path="/topics" render={() => <h1>Topics</h1>} /> */}
             <Route path="/topics" component={Topics} />
+            <Route path="/whatever" component={Topics} />
           </div>
         </header>
       </div>

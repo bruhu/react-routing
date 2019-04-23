@@ -1,0 +1,8 @@
+.topics-list {
+  padding: 3em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+}
