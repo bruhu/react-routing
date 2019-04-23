@@ -8,6 +8,7 @@ import Credits from "./Components/Credits";
 
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Components/Home";
+import Topics from "./Components/Topics";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/info" component={Info} />
             <Route path="/credits" component={Credits} />
+            {/* <Route path="/topics" render={() => <h1>Topics</h1>} /> */}
+            <Route path="/topics" component={Topics} />
           </div>
         </header>
       </div>

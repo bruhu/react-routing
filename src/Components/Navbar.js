@@ -18,6 +18,9 @@ export default function Navbar() {
         <li>
           <Link to="/credits">Credits</Link>
         </li>
+        <li>
+          <Link to="/topics">Topics</Link>
+        </li>
       </ul>
     </div>
   );

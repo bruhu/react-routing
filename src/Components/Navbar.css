@@ -10,13 +10,13 @@ ul {
 a{
     color: white;
     text-decoration: none;
-    padding: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
 a:hover {
   background-color: #474747;
   border-radius: 5px;
-  color: red;
   text-decoration: none;
 }
 
