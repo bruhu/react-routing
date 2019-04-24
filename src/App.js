@@ -5,10 +5,11 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Info from "./Components/Info";
 import Credits from "./Components/Credits";
-
-import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Topics from "./Components/Topics";
+import NotFound from "./Components/NotFound";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             {/* <Route path="/topics" render={() => <h1>Topics</h1>} /> */}
             <Route path="/topics" component={Topics} />
             <Route path="/whatever" component={Topics} />
+            <Route component={NotFound} />
           </div>
         </header>
       </div>
