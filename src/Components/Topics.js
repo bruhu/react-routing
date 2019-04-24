@@ -6,7 +6,7 @@ export default function Topics({ match }) {
   return (
     <React.Fragment>
       <h2>Topics</h2>
-      <p>Please select a topic.</p>
+      <p>Here we can select some topics.</p>
       <ul className="topics-list">
         <li>
           <Link to={`${match.url}/components`}>Components</Link>
@@ -25,11 +25,11 @@ export default function Topics({ match }) {
       /> */}
 
       <Route path={`${match.path}/:topic`} component={Topic} />
-      <Route
+      {/* <Route
         path={match.path}
         exact
-        render={() => <h4>Please select topic</h4>}
-      />
+        render={() => <h4>Please select a topic</h4>}
+      /> */}
     </React.Fragment>
   );
 }

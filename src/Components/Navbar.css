@@ -6,12 +6,11 @@
   text-decoration: none;
 }
 
-
-a{
-    color: white;
-    text-decoration: none;
-    padding: 0.5em;
-    margin: 0.5em;
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
 a:hover {
@@ -23,4 +22,9 @@ a:hover {
 a:visited {
   text-decoration: none;
   color: white;
+}
+
+.selected {
+  background-color: hotpink;
+  border-radius: 5px;
 }
