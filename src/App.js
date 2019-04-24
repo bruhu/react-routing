@@ -19,6 +19,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <div>
             <Navbar />
+            <Switch>
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/info" component={Info} />
@@ -27,6 +28,7 @@ function App() {
             <Route path="/topics" component={Topics} />
             <Route path="/whatever" component={Topics} />
             <Route component={NotFound} />
+            </Switch>
           </div>
         </header>
       </div>

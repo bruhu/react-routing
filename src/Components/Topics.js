@@ -6,7 +6,7 @@ export default function Topics({ match }) {
   return (
     <React.Fragment>
       <h2>Topics</h2>
-      <p>Here we can select some topics.</p>
+      <p>Please select a topic.</p>
       <ul className="topics-list">
         <li>
           <Link to={`${match.url}/components`}>Components</Link>
