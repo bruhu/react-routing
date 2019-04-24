@@ -20,34 +20,36 @@ const routes = [
   {
     path: "/home",
     exact: true,
-    render: "<h2>Home</h2> <p>This is the homepage of this SPA.</p>"
+    render: () => <React.Fragment><h2>Home</h2> <p>This is the homepage of this SPA.</p></React.Fragment>
   },
   {
     path: "/about",
     exact: true,
-    render: "<h2>About</h2><p>It's a me.</p>"
+    render: () => <React.Fragment><h2>About</h2><p>It's a me.</p></React.Fragment>
   },
   {
     path: "/info",
     exact: true,
-    render: "<h2>Info</h2><p>Lorem mierdas.</p>"
+    render: () => <React.Fragment><h2>Info</h2><p>Lorem mierdas.</p></React.Fragment>
   },
   {
     path: "/credits",
     exact: true,
-    render: "<h2>Credits</h2><p>Thanks Mom.</p>"
+    render: () => <React.Fragment><h2>Credits</h2><p>Thanks Mom.</p></React.Fragment>
   },
   {
     path: "/topics",
     exact: true,
-    render: "<h2>Topics</h2><p>Here we can select some topics.</p>"
+    render: () => <React.Fragment><h2>Topics</h2> <p>Here we can select some topics.</p></React.Fragment>
   }
 ];
 
 function NavbarExample() {
   return (
     <BrowserRouter>
-      <div>
+      <div style={{
+        background: "#474747"
+      }}>
         <ul className="navbar-list">
           <li>
             <NavLink to="/home" activeClassName="selected-navbar">
@@ -81,7 +83,7 @@ function NavbarExample() {
             key={index}
             path={route.path}
             exact={route.exact}
-            component={route.sidebar}
+            component={route.render}
           />
         ))}
       </div>
