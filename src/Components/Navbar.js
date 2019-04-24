@@ -7,19 +7,19 @@ export default function Navbar() {
     <div>
       <ul className="navbar-list">
         <li>
-          <NavLink to="/home" activeClassName="selected">Home</NavLink>
+          <NavLink to="/home" activeClassName="selected-navbar">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about" activeClassName="selected">About</NavLink>
+          <NavLink to="/about" activeClassName="selected-navbar">About</NavLink>
         </li>
         <li>
-          <NavLink to="/info" activeClassName="selected">Info</NavLink>
+          <NavLink to="/info" activeClassName="selected-navbar">Info</NavLink>
         </li>
         <li>
-          <NavLink to="/credits" activeClassName="selected">Credits</NavLink>
+          <NavLink to="/credits" activeClassName="selected-navbar">Credits</NavLink>
         </li>
         <li>
-          <NavLink to="/topics" activeClassName="selected">Topics</NavLink>
+          <NavLink to="/topics" activeClassName="selected-navbar">Topics</NavLink>
         </li>
       </ul>
     </div>

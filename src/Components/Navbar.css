@@ -24,7 +24,7 @@ a:visited {
   color: white;
 }
 
-.selected {
+.selected-navbar {
   background-color: hotpink;
   border-radius: 5px;
 }

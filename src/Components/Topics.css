@@ -6,3 +6,8 @@
   text-decoration: none;
   justify-content: center;
 }
+
+.selected-topics {
+  background-color: rgb(255, 202, 228);
+  border-radius: 5px;
+}

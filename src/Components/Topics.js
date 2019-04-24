@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 import "./Topics.css";
 
 export default function Topics({ match }) {
@@ -9,10 +9,10 @@ export default function Topics({ match }) {
       <p>Here we can select some topics.</p>
       <ul className="topics-list">
         <li>
-          <Link to={`${match.url}/components`}>Components</Link>
+          <NavLink to={`${match.url}/components`} activeClassName="selected-topics">Components</NavLink>
         </li>
         <li>
-          <Link to="/topics/props">Props</Link>
+          <NavLink to="/topics/props" activeClassName="selected-topics">Props</NavLink>
         </li>
       </ul>
       {/* <Route
