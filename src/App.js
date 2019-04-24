@@ -30,8 +30,8 @@ const routes = [
   {
     path: "/info",
     exact: true,
-    // render: () => <React.Fragment><h2>Info</h2><p>Lorem mierdas.</p></React.Fragment>,
-    component: Info
+    render: <React.Fragment><h2>Info</h2><p>Lorem mierdas.</p></React.Fragment>,
+    // component: Info
   },
   {
     path: "/credits",
@@ -89,7 +89,7 @@ function NavbarExample() {
             path={route.path}
             exact={route.exact}
             component={route.component}
-            render={route.render}
+            render={() => route.render}
           />
         ))}
       </div>
